@@ -1,0 +1,125 @@
+#include <stdio.h>
+
+int main(void) {
+	
+	int hi=0,mi=0,hf=0,mf=0,i=0,m=0;
+	scanf("%d %d %d %d",&hi,&mi,&hf,&mf);
+	if(hf==hi&&mf==mi){
+		printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+	}else{
+		if(hf>=hi&&mf>=mi){
+			printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",(hf-hi),(mf-mi));
+		}
+		if(hf>=hi&&mf<mi){
+			printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",(hf-hi),(mi-mf));
+		}
+		if(hf<=hi&&mf>=mi){
+			while(hf!=0){
+				hf=hf-1;
+				i=i+1;
+			}
+			while(hi!=24){
+				hi=hi+1;
+				i=i+1;
+			}
+			printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",i,(mf-mi));
+		}
+		if(hf<=hi&&mf<mi){
+			while(hf!=0){
+				hf=hf-1;
+				i=i+1;
+			}
+			while(hi!=24){
+				hi=hi+1;
+				i=i+1;
+			}
+			while(mf!=1){
+				mf=mf-1;
+				m=m+1;
+			}
+			while(mi!=61){
+				mi=mi+1;
+				m=m+1;
+			}
+			i=i-1;
+			printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",i,m);
+		}
+	}
+	return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main(void) {
+	
+	int hi=0,mi=0,hf=0,mf=0,i=0,m=0;
+	scanf("%d %d %d %d",&hi,&mi,&hf,&mf);
+	if(hf==hi&&mf==mi){
+		printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+	}else{
+		if(hf>=hi&&mf>=mi){
+			printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",(hf-hi),(mf-mi));
+		}
+		if(hf>=hi&&mf>=mi){
+			while(hf!=0){
+				hf=hf-1;
+				i=i+1;
+			}
+			while(hi!=24){
+				hi=hi+1;
+				i=i+1;
+			}
+			while(mf!=1){
+				mf=mf-1;
+				m=m+1;
+			}
+			while(mi!=61){
+				mi=mi+1;
+				m=m+1;
+			}
+			printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",i,m);
+		}
+		if(hf<=hi&&mf>=mi){
+			while(hf!=0){
+				hf=hf-1;
+				i=i+1;
+			}
+			while(hi!=24){
+				hi=hi+1;
+				i=i+1;
+			}
+			while(mf!=1){
+				mf=mf-1;
+				m=m+1;
+			}
+			while(mi!=61){
+				mi=mi+1;
+				m=m+1;
+			}
+			printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",i,m);
+		}
+		if(hf<=hi&&mf<mi){
+			while(hf!=0){
+				hf=hf-1;
+				i=i+1;
+			}
+			while(hi!=24){
+				hi=hi+1;
+				i=i+1;
+			}
+			while(mf!=1){
+				mf=mf-1;
+				m=m+1;
+			}
+			while(mi!=61){
+				mi=mi+1;
+				m=m+1;
+			}
+			i=i-1;
+			printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",i,m);
+		}
+	}
+	return 0;
+}

@@ -1,0 +1,21 @@
+[20:14, 20/05/2021] +55 99 8807-9490: Boa noite, alguém pode me dizer o problema com esse código? É o 2879 - Desvendando Monty Hall. Já coloquei o uDebug e os resultados são os mesmos. Não sei mais como proceder
+[20:14, 20/05/2021] +55 99 8807-9490: #include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int nGames, carDoor, qtd, cont;
+    cin >> nGames;
+
+    qtd = nGames;
+    while (nGames--)
+    {
+        cin >> carDoor;
+        // se a primeira porta já for a vencedora
+        if (1 == carDoor)
+            {
+                cont++;
+            }
+        }
+    cout << qtd - cont << endl;

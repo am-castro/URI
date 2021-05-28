@@ -6,7 +6,7 @@ int main() {
     scanf("%f %f %f",&A, &B, &C);
     
 	float temp=A;
-	if(B>A && B>C){teste
+	if(B>A && B>C){
 		A=B;
 		B=temp;
 	}

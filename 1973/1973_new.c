@@ -10,18 +10,8 @@ int main() {
  	for(v=1;v<=N;v++){
  		scanf("%d",&i[v]);
 	}
-	for(v=1;v<=N;v++){
-		if(i[v]%2==0){
-			for(v=i[v];v>0;v--){
-				i[v]--;
-				atacked++;
-			}
-		}else{
-			for(v=i[v];v<i[v];v++){
-				i[v]++;
-				atacked++;
-			}
-		}
+	while(v>0 && v<=N){
+		
 	}
 	
 	printf("%d %d",N,atacked);

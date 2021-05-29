@@ -8,18 +8,16 @@
  
 int main() {
 	
-	int N=0, pico=0;
+	int N=0, pico=0, i=0;
 	scanf("%d",&N);
  	int H[N];
  	
- 	if(N==1)
- 		printf("%d",N);
-	else{
-		for(int i=0; i<N; i++){
-	 		scanf("%d",&H[i]);
-		}
-		for(int i=0; i<N; i++){	
-			printf("\n ** Vale ** \n **   %d  **",H[i]);
+	for(i=1; i<=N; i++){
+		scanf("%d",&H[i]);
+	}
+	for(i=2;i<=N;i++){
+		if(H[i-1]<H[i]){
+			printf("1\n");
 		}	
 	}
 	

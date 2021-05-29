@@ -1,6 +1,0 @@
-Faça um programa que leia duas palavras e verifique se uma delas pode ser obtida por meio da remoção de letras da outra. A ordem das letras não pode ser alterada. Por exemplo: "moda" é uma subsequência em "moradia"; "cereja" é uma subsequência em "cerveja"; e, "mira" NÃO é subsequencia de "moradia". A saída do programa deve ser "Sim" ou "Não". (3 Pontos)
-
-
-Faça um programa que receba como entrada um número inteiro não negativo n, seguido de uma sequência de n números inteiros, e determine o comprimento da maior subsequência de elementos repetidos. Por exemplo, considere que a sequência abaixo com 12 números seja dada como entrada (o primeiro número é o tamanho da sequência): 12 1 2 2 3 10 10 10 13 13 12 13 13. A maior subsequência neste exemplo tem tamanho 3, dado pelos números 10 10 10. Logo o seu programa deveria imprimir: "Maior subsequencia tem tamanho 3." (3 Pontos)
-
-Escreva um programa que leia um tabuleiro de jogo da velha e verifique o status do jogo. O tabuleiro é composto de nove números, onde o jogador ‘O’ é representado por um 0; o jogador ‘X’ por um 2 e uma casa vazia por um 1. A saída do seu programa deve ser ‘X’, ‘O’, ‘Velha’ (empatado) ou ‘Indefinido’ (ainda não terminou). (2 Pontos)

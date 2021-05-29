@@ -7,7 +7,7 @@ int main() {
     scanf("%d",&N);
     int i[N];
 
- 	while(v<N){
+ 	for(v=1;v<=N;v++){
  		scanf("%d",&i[v]);
 	}
 	for(v=1;v<=N;v++){

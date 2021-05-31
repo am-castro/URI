@@ -1,20 +1,35 @@
 #include <stdio.h>
 #include <conio.h>
+#include <math.h>
 
 int main() {
  
-    int N=0,atacked=0,v=1;
-    scanf("%d",&N);
-    int i[N];
+    int N=0,atacked=0,i=1, total=0;
+    
+	scanf("%i",&N);
+    int e[N];
 
- 	for(v=1;v<=N;v++){
- 		scanf("%d",&i[v]);
+ 	for(i;i<=N;i++){
+ 		scanf("%d",&e[i]);
 	}
-	while(v>0 && v<=N){
+	for(i=1;i<=N;i++){
+		total+=e[i];
 		
+		if(e[i]%2==0){
+			if(e[i]!=0){
+				e[i]=e[i]-1;
+				atacked++;
+			}
+			else if(e[i]==0)
+				i=N;
+		}
+		else{
+			i--;
+		}
 	}
+		total=total-atacked;
 	
-	printf("%d %d",N,atacked);
+	printf("%d %d",atacked,total);
 	
  	getch();
     return 0;
